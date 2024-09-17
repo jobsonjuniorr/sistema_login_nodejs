@@ -50,7 +50,7 @@ function sendOrderToWhatsApp(orderDetails) {
     message += `\n Valor total: R$ ${orderDetails.totalAmount}\n`
 
     const encodedMessage = encodeURIComponent(message);
-    const phoneNumber = '+5591992175347';
+    const phoneNumber = '+5599999999999';//substituir pelo número que deseja enviar a mensagem 
 
     const whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodedMessage}`
     window.open(whatsappUrl, '_blank');
