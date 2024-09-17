@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: "Roboto",sans-serif;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/img/home-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.login{
+        width: 30%;
+        height: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        backdrop-filter: blur(5px)contrast(110%); 
+        box-shadow: 12px 12px 12px 12px rgba(7, 43, 119, 0.1);
+        border-radius: 2rem;
+        gap: 1rem;
+}
+.login h3{
+    color: #fff;
+}
+.teste{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+    padding: 20px;
+}
+/* Remova o estilo padrão do input */
+input[type="text"],
+input[type="password"] {
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+    padding: 5px 0;
+    width: 100%;
+}
+
+
+input[type="text"]:focus {
+    border-bottom-color: #000;
+}
+
+input[type="text"],
+input[type="text"]:focus {
+    transition: border-bottom-color 0.3s;
+}
+input[type="password"]:focus{
+    border-bottom-color:#000 ;
+}
+.ajuste{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+    position: relative;
+
+}
+
+input::placeholder{
+    color:white;
+}
+
+.btn{
+    background-color:black;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    display: inline-block;
+    border-radius: 0.8rem;
+    transition: 1s;
+}
+.btn:hover{
+   background-color: aliceblue;
+   color: #000;
+}
+img{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    margin-left: 85%;
+    margin-bottom: 0.5rem;
+}

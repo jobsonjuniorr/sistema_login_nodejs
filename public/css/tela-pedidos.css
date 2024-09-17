@@ -1,0 +1,33 @@
+
+@media screen and (min-width:320px) and (max-width: 600px) {
+    *{
+        box-sizing: border-box;
+        font-family: "Roboto",sans-serif;
+        color: #fff;
+        
+    }
+    :root{
+        --main-color:#010103;
+        --black:#13131a;
+        --bg: #d3ad7f ;
+    }
+    .roboto-medium {
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+      }
+    
+    body{
+        background-color: var(--bg);
+    }
+    body h1{
+        text-align: center;
+    }
+    .ss{
+        border:1px solid #c0c0c0;
+        background-color: #13131a;
+       
+    }
+    
+  
+}

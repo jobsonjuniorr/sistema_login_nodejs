@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funcionário</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/telamedia.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@400;700;900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="shortcut icon" href="/img/logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <header class="header">
+        <section>
+            <span onclick="botaoMenu()" class="material-symbols-outlined btn-menu">
+                menu
+                </span>
+            <nav class="navbar" id="testes">
+                <a href="#home">Home</a>
+                <a href="#about">Sobre</a>
+                <a href="#menu">Menu</a>
+                <a href="#review">Avaliação</a>
+                <a href="#address">Endereço</a>
+                <a href="/logout">Sair</a>
+            </nav>
+            <a href="#" class="logo">
+                <img src="/img/logo.png" alt="logo">
+            </a>
+        </section>
+    </header>
+    <main class="home-container">
+        <section id="home">
+            <div class="content-home">
+                <h3>CODE COM O MELHOR CAFÉ DA REGIÃO</h3>
+                <p>Bem-vindo à nossa loja de café, onde cada xícara conta uma história! Aqui, acreditamos que o café é mais do que apenas uma bebida é uma experiência que desperta os sentidos e aquece a alma. Seja você um apreciador de sabores intensos ou um entusiasta de criações únicas, nosso menu é cuidadosamente elaborado para satisfazer todos os gostos. Explore nossos blends especiais, descubra combinações perfeitas e permita-se desfrutar de um momento de puro prazer. Sinta-se em casa, saboreie e deixe-nos tornar seu dia ainda mais especial!</p>
+                <a href="#" class="btn">Pegue o seu agora</a>
+            </div>
+        </section>
+    </main>
+    <section class="about" id="about">
+        <h2 class="title">SOBRE <span>NÓS</span></h2>
+        <div class="row">
+            <div class="container-image">
+                <img class="img-media"  src="/img/about-img.jpg" alt="Sobre-nós">
+            </div>
+            <div class="content">
+                <h3>O Que Faz Nosso Café Especial </h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque delectus quisquam voluptates autem
+                    tempora iste eos rem facere, architecto excepturi obcaecati. Ex quis animi, ea distinctio
+                    exercitationem nulla error debitis?</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, cum! Magnam possimus nemo veniam
+                    sed perferendis fuga animi qui, perspiciatis delectus reprehenderit esse odio maxime repellat
+                    doloremque? Vitae, voluptatibus excepturi.</p>
+                <a href="#" class="btn">Saíba mais</a>
+            </div>
+        </div>
+    </section>
+    <section class="menu" id="menu">
+        <h2 class="title">NOSSO <span>MENU</span></h2>
+
+        <div class="box-container">
+            <div class="box product" data-name="Café com leite" data-price="10.99">
+                <img src="/img/menu-1.png" alt="item-1">
+                <h3>Café com Leite</h3>
+                <div class="price">R$ 10,99 <span>R$20,99</span></div>
+                <button class="btn" onclick="addToOrder(this)">Adicionar ao carrinho</button>
+            </div>
+
+            <div class="box product" data-name="Capuccino" data-price="15.99">
+                <img src="/img/menu-2.png" alt="item-2">
+                <h3>Capuccino</h3>
+                <div class="price">R$ 15,99 <span>R$20,99</span></div>
+                <button class="btn" onclick="addToOrder(this)">Adicionar ao carrinho</button>
+            </div>
+
+            <div class="box product" data-name="Café sem Açucar" data-price="7.99">
+                <img src="/img/menu-3.png" alt="item-3">
+                <h3>Café sem Açucar</h3>
+                <div class="price">R$ 7,99 <span>R$14,99</span></div>
+                <button class="btn" onclick="addToOrder(this)">Adicionar ao carrinho</button>
+
+            </div>
+
+            <div class="box product" data-name="Achocolatado" data-price="7.99">
+                <img src="/img/menu-4.png" alt="item-4">
+                <h3>Achocolatado</h3>
+                <div class="price">R$ 7,99 <span>R$14,99</span></div>
+                <button class="btn" onclick="addToOrder(this)">Adicionar ao carrinho</button>
+            </div>
+            <div class="box product" data-name="Frappuccino" data-price="20.99">
+                <img src="/img/menu-5.png" alt="item-5">
+                <h3>Frappuccino</h3>
+                <div class="price">R$ 20,99 <span>R$29,99</span></div>
+                <button class="btn" onclick="addToOrder(this)">Adicionar ao carrinho</button>
+
+            </div>
+
+            <div class="box product" data-name="Mocha" data-price="25.99">
+                <img src="/img/menu-6.png" alt="item-6">
+                <h3>Mocha</h3>
+                <div class="price">R$ 25,99 <span>R$35,99</span></div>
+                <button class="btn" onclick="addToOrder(this)">Adicionar ao carrinho</button>
+
+            </div>
+        </div>
+
+       
+    </section>
+    <section class="menu-pedido">
+
+        <div class="input-texto" >
+            <div class="ajuste-form">
+                <h2>Fazer pedido</h2>
+            <label for="cliente">
+                <h3>Nome cliente:</h3>
+            </label>
+            <input class="input-nome" type="text" id="nome_cliente" name="nome_cliente" placeholder="Digite seu nome">
+            <h3 >Resumo do Pedido:</h3>
+            <ul id="orderSummary" class="texto-resumo-pedido"></ul>
+            <label for="mesa">
+                <h3>Número da Mesa:</h3>
+            </label>
+                <input class="mesa input-nome" type="number" id="mesa" name="mesa" min="1" max="5" required>
+                <div class="btn-agrupa">
+                <button class="btn-pedido" onclick="submitOrder()">Enviar Pedido</button>
+                <button class="btn-pedido" onclick="limparOrder()">Limpar pedido</button>
+                </div>
+                <h2 id="deletar-front"></h2>
+            </div>
+        </div>
+        <div class="input-texto">
+            <div class="ajuste-form">
+          <label  for="mesa-id">Selecione a Mesa:</label>
+          <select class="select-mesa" id="mesa-id">
+            <option class="option-mesas" value="1">Mesa 1</option>
+            <option class="option-mesas" value="2">Mesa 2</option>
+            <option class="option-mesas" value="3">Mesa 3</option>
+            <option class="option-mesas" value="4">Mesa 4</option>
+            <option class="option-mesas" value="5">Mesa 5</option>
+          </select>
+          
+          <label for="estado">Estado:</label>
+          <select class="select-mesa" id="estado">
+            <option class="option-mesas" value="disponível">Disponível</option>
+            <option class="option-mesas"  value="ocupada">Ocupada</option>
+            <option class="option-mesas" value="reservada">Reservada</option>
+          </select>
+          
+          <label for="inicio">Início:</label>
+          <input class="input-nome" type="datetime-local" id="inicio">
+          <label for="fim">Fim:</label>
+          <input class="input-nome" type="datetime-local" id="fim">
+          
+          <label for="nome-cliente">Nome do Cliente:</label>
+          <input class="input-nome" type="text" id="nome-cliente">
+          <label for="telefone-cliente">Telefone do Cliente:</label>
+          <input class="input-nome" type="text" id="telefone-cliente">
+          
+          <button class="btn-pedido" onclick="atualizarEstado()">Atualizar Estado</button>
+        </div>
+        </div>
+    </section>
+
+     <div class="tabela-contener">
+        <div class="tabelas-mesas">
+            <table id="reservasTable" border="1">
+                <thead>
+                  <tr class="tabela-main">
+                    <th>Mesa 1</th>
+                    <th>Mesa 2</th>
+                    <th>Mesa 3</th>
+                    <th>Mesa 4</th>
+                    <th>Mesa 5</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="tabela-main" id="reservasRow">
+                    <td class="tabela-usuario" id="mesa1"></td>
+                    <td class="tabela-usuario" id="mesa2"></td>
+                    <td class="tabela-usuario" id="mesa3"></td>
+                    <td class="tabela-usuario" id="mesa4"></td>
+                    <td class="tabela-usuario" id="mesa5"></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+        </div>
+    </div>
+    </section>
+    
+    <section class="review" id="review">
+        <h2 class="title">NOSSOS <span>CLIENTES</span></h2>
+        <div class="box-container">
+            <div class="box">
+                <img src="/img/quote-img.png" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate corrupti cum accusantium quos
+                    quae repellendus earum sint rerum, ab molestiae voluptates aut ducimus? Quae officiis voluptatum,
+                    adipisci illo corporis ab!</p>
+                <img class="user" src="/img/pic-1.png" alt="foto-cliente">
+                <h3>João Gustavo</h3>
+                <div class="star">
+                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png"
+                        alt="star--v1" />
+                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png"
+                        alt="star--v1" />
+                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png"
+                        alt="star--v1" />
+                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png"
+                        alt="star--v1" />
+                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star-half-empty.png"
+                        alt="star-half-empty" />
+                </div>
+            </div>
+            <div class="box">
+                <img src="/img/quote-img.png" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate corrupti cum accusantium quos
+                    quae repellendus earum sint rerum, ab molestiae voluptates aut ducimus? Quae officiis voluptatum,
+                    adipisci illo corporis ab!</p>
+                <img class="user" src="/img/pic-2.png" alt="foto-cliente">
+                <h3>Camila Santos</h3>
+                <div class="star">
+                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png"
+                        alt="star--v1" />
+                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png"
+                        alt="star--v1" />
+                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png"
+                        alt="star--v1" />
+                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png"
+                        alt="star--v1" />
+                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star-half-empty.png"
+                        alt="star-half-empty" />
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="/img/quote-img.png" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate corrupti cum accusantium quos
+                    quae repellendus earum sint rerum, ab molestiae voluptates aut ducimus? Quae officiis voluptatum,
+                    adipisci illo corporis ab!</p>
+                <img class="user" src="/img/pic-3.png" alt="foto-cliente">
+                <h3>Rodrigo Junior</h3>
+                <div class="star">
+                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png"
+                        alt="star--v1" />
+                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png"
+                        alt="star--v1" />
+                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png"
+                        alt="star--v1" />
+                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png"
+                        alt="star--v1" />
+                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star-half-empty.png"
+                        alt="star-half-empty" />
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="address" id="address">
+        <h2 class="title"> Nosso<span> ENDEREÇO</span></h2>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30117.325794719764!2d-48.51465340376065!3d-1.4592718674791818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x92a48fc64b80ae27%3A0x2c2240f7104e18ad!2sCaf%C3%A9%20Plenitude%20-%20Tamandar%C3%A9!5e0!3m2!1spt-BR!2sbr!4v1724096635885!5m2!1spt-BR!2sbr"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <section class="footer">
+        <div class="share">
+            <img width="80" height="80" src="https://img.icons8.com/ios/80/ffffff/instagram-new--v1.png"
+                alt="instagram-new--v1" />
+            <img width="80" height="80" src="https://img.icons8.com/ios/80/ffffff/twitterx--v1.png"
+                alt="twitterx--v1" />
+            <img width="80" height="80" src="https://img.icons8.com/ios/80/ffffff/whatsapp--v1.png"
+                alt="whatsapp--v1" />
+        </div>
+    </section>
+
+
+    <script src="/js/funcionario_script.js"></script>
+    <script src="/js/menu.js"></script>
+</body>
+
+</html>
