@@ -40,20 +40,8 @@ Usando as "" para retira os espaçamentos caso tenha como nessa situação que �
 Assim você consegue encontra o dektop e da continuidade na aplicação
 
 Fazemos a navegação até o projeto com o comando no prompt: cd sistema_login_nodejs <nome do arquivo>
-
-Logo após acessar vamos inicializar o projeto usando o comando: npm init de enter até chegar na mensagem Is this Ok? (yes) Assim você digita Yes 
-
-Instalação das Dependências:
-
-Instale as bibliotecas necessárias executando os seguintes comandos
-{ 
-npm install --save express
-npm install express-session
-npm install body-parser
-npm install mysql2
-
-Comando para deixa o servidor online: node index.js
-}
+Após registra instale as dependêcias com o comando:
+npm install 
 
 Caso tente roda com os comando dados terá um erro no caso pois não ter o banco de dados que está associado a aplicação 
 
